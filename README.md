@@ -1,4 +1,4 @@
-# Retail Sales Analytics — MySQL
+# Retail Sales Analytics - MySQL
 
 Base de données de vente au détail multi-magasins avec 12 mois de données réalistes (saisonnalité, churn client, marges produit) et 23 requêtes analytiques organisées en trois tableaux de bord métier : KPIs exécutifs, analyse client, performance commerciale. Schéma, données et requêtes sont **exécutables tels quels** sur MySQL 8.0+ ou MariaDB 10.5+, et validés par une suite de tests automatisés.
 
@@ -6,7 +6,7 @@ Base de données de vente au détail multi-magasins avec 12 mois de données ré
 
 ## Pourquoi ce projet
 
-Un schéma de base de données ne suffit pas à démontrer une compétence analytique : ce qui compte, c'est la capacité à en extraire des décisions business. Ce projet simule une chaîne de 5 points de vente (4 magasins physiques + 1 boutique en ligne) sur une année complète, avec des données générées pour reproduire des phénomènes réels — saisonnalité des ventes, clients qui se désengagent, écarts de marge entre catégories — afin que chaque requête produise un résultat interprétable, pas une coquille vide.
+Un schéma de base de données ne suffit pas à démontrer une compétence analytique : ce qui compte, c'est la capacité à en extraire des décisions business. Ce projet simule une chaîne de 5 points de vente (4 magasins physiques + 1 boutique en ligne) sur une année complète, avec des données générées pour reproduire des phénomènes réels - saisonnalité des ventes, clients qui se désengagent, écarts de marge entre catégories - afin que chaque requête produise un résultat interprétable, pas une coquille vide.
 
 ---
 
@@ -17,9 +17,9 @@ retail-analytics/
 ├── 01_schema.sql                              # 8 tables, contraintes FK, index analytiques
 ├── 02_seed_data.sql                            # 909 commandes / 2258 lignes / 12 mois / 300 clients
 ├── generate_seed.py                            # Script de génération des données (reproductible, seed fixe)
-├── queries_01_executive_kpis.sql               # 8 requêtes — chiffre d'affaires, marges, tendances
-├── queries_02_customer_analytics.sql           # 9 requêtes — segmentation RFM, churn, fidélité
-├── queries_03_employee_store_performance.sql   # 6 requêtes — classement vendeurs, comparaison magasins
+├── queries_01_executive_kpis.sql               # 8 requêtes - chiffre d'affaires, marges, tendances
+├── queries_02_customer_analytics.sql           # 9 requêtes - segmentation RFM, churn, fidélité
+├── queries_03_employee_store_performance.sql   # 6 requêtes - classement vendeurs, comparaison magasins
 ├── run_tests.sh                                # Suite de 18 tests automatisés avec assertions
 └── README.md
 ```
